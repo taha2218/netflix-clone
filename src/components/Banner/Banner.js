@@ -9,7 +9,7 @@ function Banner() {
 
   useEffect(() => {
     async function fetchData() {
-      const request = await instance.get(requests.fetchTrending);
+      const request = await instance.get(requests.fetchNetflixOriginals);
       setMovie(
         request.data.results[
           Math.floor(Math.random() * request.data.results.length - 1)

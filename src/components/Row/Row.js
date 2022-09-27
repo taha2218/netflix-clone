@@ -26,7 +26,7 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
             src={`${baseURL}${
               isLargeRow ? movie?.poster_path : movie?.backdrop_path
             }`}
-            alt=""
+            alt={movie.name}
           />
         ))}
       </div>
