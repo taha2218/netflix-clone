@@ -6,6 +6,7 @@ import LogInScreen from './components/screens/LogInScreen/LogInScreen';
 import { auth } from './utils/firebase/firebase.utils';
 import { login, logout, selectUser } from './features/userSlice';
 import './App.css';
+import ProfileScreen from './components/screens/Profile/ProfileScreen';
 
 function App() {
 
@@ -24,12 +25,12 @@ function App() {
             }));
           } else {
             // Logged Out 
-            dispatch(logout)
+            dispatch(logout())
           }
         }
       )
         return unsubscribe;
-    }, [])
+    }, [dispatch])
 
   return (
     <div className="app">
@@ -39,7 +40,7 @@ function App() {
         ? <LogInScreen />
         : <Routes>
           <Route path='/' element={<HomeScreen/>} />
-          <Route path='/hi' element={<h1>Hiii</h1>} />
+          <Route path='/profile' element={<ProfileScreen/>} />
         </Routes> 
       }
       </BrowserRouter>

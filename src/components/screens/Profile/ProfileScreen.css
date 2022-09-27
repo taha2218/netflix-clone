@@ -1,0 +1,67 @@
+.profileScreen {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileScreen__body {
+    position: absolute;
+    width: 60%;
+    padding: 5px 0px;
+}
+
+.profileScreen__body > h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.profileScreen__details {
+    padding: 1em 0;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    display: flex
+}
+
+.profileScreen__details > img {
+    height: 8vw;
+    max-height: 180px;
+    max-width: 180px;
+    min-height: 80px;
+    min-width: 80px;
+    width: 8vw;
+    border-radius: 5px;
+}
+
+.profileScreen__data {
+    margin-left: 1.8rem;
+    flex-grow: 1;
+}
+
+.mail {
+    font-weight: 300;
+    background-color: #666666;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 10px;
+    font-weight: 400;
+    border-radius: 2px;
+}
+
+.profileScreen__logout {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    padding: 10px 10px;
+    font-weight: 500;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #e50914;
+}
+
+.profileScreen__plans {
+    padding: 1em 0px;
+}
