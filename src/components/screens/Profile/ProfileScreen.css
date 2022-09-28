@@ -10,6 +10,7 @@
     position: absolute;
     width: 60%;
     padding: 5px 0px;
+    max-width: 600px;
 }
 
 .profileScreen__body > h1 {
@@ -63,5 +64,37 @@
 }
 
 .profileScreen__plans {
-    padding: 1em 0px;
+    padding: 0.9em 0px;
+}
+
+.plans__header {
+    color: white;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #333;
+}
+
+.plans__ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.plans__ > h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+}
+
+.plans__ > button {
+    background-color: #e50914;
+    padding: 8px 13px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.price {
+    color: rgba(255, 255, 255, 0.219);
+    font-size: 12px;
 }

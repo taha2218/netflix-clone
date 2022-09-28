@@ -20,18 +20,32 @@
     align-items: center;
 }
 
-.nav__logo {
-    width: 100px;
-    object-fit: contain;
+.nav__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__left > h5 {
+    color: white;
+    font-weight: 350;
     padding-left: 20px;
     cursor: pointer;
 }
 
-.nav__avatar {
-    padding-right: 40px;
-    height: 35px;
-    width: 35px;
+.nav__logo {
+    width: 100px;
+    object-fit: contain;
+    padding-left: 20px;
+    padding-right: 20px;
     cursor: pointer;
+}
 
+.nav__avatar {
+    margin-right: 40px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 4px;
 }
 

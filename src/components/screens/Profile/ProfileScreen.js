@@ -22,7 +22,19 @@ function ProfileScreen() {
           <div className='profileScreen__data'>
             <div className='mail'>ta.22.ha.18.s@gmail.com</div>
             <div className='profileScreen__plans'>
-
+              <div className='plans__header'>Plans</div>
+              <div className='plans__'>
+                <h3>Netflix Standard<br/> <span className='price' >$0.80/month</span></h3>
+                <button>Subscribe</button>
+              </div>
+              <div className='plans__'>
+                <h3>Netflix Basic <br/> <span className='price' >$1.50/month</span> </h3>
+                <button>Subscribe</button>
+              </div>
+              <div className='plans__'>
+                <h3>Netflix Premium<br/> <span className='price' >$2.90/month</span></h3>
+                <button>Subscribe</button>
+              </div>
             </div>
             <button 
             className='profileScreen__logout'
